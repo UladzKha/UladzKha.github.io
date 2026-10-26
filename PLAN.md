@@ -9,7 +9,7 @@
 ## Proposed structure
 
 - `refresh-2026`: Hero, project cards, approach, short experience timeline, writing/talks placeholder, contact. A small hash seal types and closes into an entrance motif.
-- `refresh-2026-notebook`: cover and typed rule, dated entries `#entry-001` through `#entry-003`, principles, short background, retractions and corrections placeholder, contact, page-number footer, and print styles. Each entry states hypothesis, method, result, and status.
+- `refresh-2026-notebook`: cover and typed rule, dated entries `#entry-001` through `#entry-003`, principles, short background, contact, page-number footer, and print styles. Each entry states hypothesis, method, result, and status.
 - Keep the static stack. Generate a local PNG Open Graph image for each branch. Use system font stacks and no remote runtime assets.
 
 ## Design direction
@@ -26,8 +26,7 @@
 
 ## Open TODOs
 
-- Replace illustrative hash placeholders with actual public ruler hashes and describe exactly what each freezes. No real hash was supplied.
+- The supplied oathgate ruler hash is shown in both designs and labelled as oathgate's own CI-verified hash. No hash is shown for memgate or Genkan.
 - Add the Genkan talk's date and public link if it is announced. The talk is only planned.
-- Add real retractions and corrections only after Ulad supplies them.
-- Confirm a public contact address or profile beyond GitHub if desired.
+- Existing GitHub, LinkedIn, and email links are reused; X was supplied for this update.
 - Confirm the dates for experience milestones if a dated timeline is wanted.
