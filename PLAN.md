@@ -24,9 +24,13 @@
 2. Evidence before capability.
 3. Freeze the ruler. Trust the result.
 
-## Open TODOs
+## Completed in this update
 
 - The supplied oathgate ruler hash is shown in both designs and labelled as oathgate's own CI-verified hash. No hash is shown for memgate or Genkan.
+- GitHub, LinkedIn, and email links are reused; X was supplied for this update.
+- The notebook design no longer includes a corrections section.
+
+## Open TODOs
+
 - Add the Genkan talk's date and public link if it is announced. The talk is only planned.
-- Existing GitHub, LinkedIn, and email links are reused; X was supplied for this update.
 - Confirm the dates for experience milestones if a dated timeline is wanted.
