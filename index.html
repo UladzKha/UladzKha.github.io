@@ -3,134 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Uladzimir Khadakouski — AI engineer building measurable, local-first LLM systems.">
-  <meta name="theme-color" content="#0b0d0c">
-  <title>Ulad — AI Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f4f0e6">
+  <meta name="description" content="The lab notebook of Uladzimir Khadakouski: frozen evaluations, guarded agent memory, and verified rights for agents.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uladzkha.github.io/">
+  <meta property="og:title" content="Lab notebook of Uladzimir Khadakouski — Verifiable AI">
+  <meta property="og:description" content="Rule 1: freeze the ruler before you measure.">
+  <meta property="og:image" content="https://uladzkha.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lab notebook of Uladzimir Khadakouski. Verifiable AI.">
+  <title>Lab notebook — Uladzimir Khadakouski</title>
+  <link rel="canonical" href="https://uladzkha.github.io/">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="mark" href="#top" aria-label="Home">UK<span>.</span></a>
-    <nav aria-label="Primary navigation">
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
-      <a href="#about">About</a>
-    </nav>
-    <a class="header-contact" href="mailto:raer.camp@gmail.com">Let’s talk <span>↗</span></a>
-  </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="notebook">
+    <header class="site-header" id="top"><a href="#top" class="brand">UK / LAB NOTES</a><nav aria-label="Main navigation"><a href="#entries">Entries</a><a href="#principles">Method</a><a href="#background">About</a><a href="#contact">Contact</a></nav><button type="button" id="theme-toggle" aria-label="Switch to night shift" aria-pressed="false">NIGHT SHIFT <span aria-hidden="true">◐</span></button></header>
+    <main id="main">
+      <section class="cover" aria-labelledby="cover-title"><div class="cover-kicker"><span>FIELD NOTES / 2026</span><span>VOL. 01 — OPEN</span></div><p class="cover-label">LAB NOTEBOOK OF</p><h1 id="cover-title">Uladzimir<br>Khadakouski<span class="period">.</span></h1><p class="cover-subtitle">Verifiable AI</p><div class="cover-rule"><span>Rule 1:</span> <span class="typed">freeze the ruler before you measure.</span><span class="typing-cursor" aria-hidden="true"></span></div><div class="cover-bottom"><p>AI/QA engineer · Purmerend, Netherlands<br>9+ years in engineering</p><a href="#entries">OPEN ENTRIES <span aria-hidden="true">↓</span></a></div></section>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow"><span class="status-dot"></span> AI Engineer · Netherlands</p>
-      <h1 id="hero-title">I build LLM systems—<br><em>and the evals that keep them honest.</em></h1>
-      <p class="hero-copy">Ten years in software engineering, from frontend leadership to production AI. I focus on agentic systems, deterministic quality gates, and local-first infrastructure.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="#work">View selected work <span>↓</span></a>
-        <a class="text-link" href="https://github.com/UladzKha" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-        <a class="text-link" href="https://www.linkedin.com/in/k-dalu/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
-      </div>
-      <div class="signal" aria-hidden="true">
-        <span>01</span><div class="signal-line"><i></i></div><span>MEASURE / REPRODUCE / IMPROVE</span>
-      </div>
-    </section>
+      <section class="intro paper-section" id="principles" aria-labelledby="principles-title"><div class="section-number">00 / WORKING RULE</div><div><h2 id="principles-title">Keep the measure<br>where we can see it.</h2><p>Trustworthy AI needs rulers that cannot quietly move. I work on frozen evaluations, guarded agent memory, and rights earned through verified results.</p><p class="margin-note">evidence before capability</p></div></section>
 
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <p class="section-index">01 / SELECTED WORK</p>
-        <h2 id="work-title">Systems that show<br>their work.</h2>
-      </div>
+      <section class="entries" id="entries" aria-labelledby="entries-title"><div class="entries-heading"><span class="section-number">01 / EXPERIMENTS</span><h2 id="entries-title">Current entries<span class="period">.</span></h2><p>Each entry starts with a claim, a method, and a result that can be checked.</p></div>
+        <article class="entry" id="entry-001" aria-labelledby="entry-001-title"><div class="entry-top"><div><p class="entry-id">ENTRY 001 / EVALUATION</p><p class="filed">FILED 26 OCT 2026</p></div><span class="status">PUBLIC · v0.1.0</span></div><div class="entry-title-row"><h3 id="entry-001-title">oathgate</h3><span class="entry-type">THE RULER</span></div><div class="entry-content"><div class="field"><span>HYPOTHESIS</span><p>An ML evaluation is only useful if its method is fixed before the result is known.</p></div><div class="field"><span>METHOD</span><p>Freeze the methodology into a hash with <code>oathgate predict</code>. Run the eval, then use <code>oathgate check</code>.</p></div><div class="field"><span>RESULT</span><p>Exit 0 means the ruler holds; 1 means it moved; 2 means it cannot be checked. v0.1.0 has zero runtime dependencies and 55 tests on Python 3.11–3.13. The repo checks itself in CI with its own lock.</p></div><div class="field"><span>STATUS / NEXT</span><p>Public on GitHub and PyPI. v0.2.0 is planned with MLflow integration and LLM-judge definitions inside the hash.</p></div></div><div class="entry-bottom"><div class="entry-links"><a href="https://github.com/UladzKha/oathgate">REPOSITORY ↗</a><a href="https://pypi.org/project/oathgate/">PYPI ↗</a></div><details class="hash-stamp"><summary title="90d4af4923f4ca466021ab36e24e5fc749eaf6108a7bbf56c13d73faba7baf0c">90d4af49…baf0c <span aria-hidden="true">↗</span></summary><p>oathgate's own ruler hash, verified in its CI. It freezes the ML evaluation methodology before the eval runs.</p><code>90d4af4923f4ca466021ab36e24e5fc749eaf6108a7bbf56c13d73faba7baf0c</code></details></div><p class="margin-note">the ruler, not the child being measured</p></article>
 
-      <article class="project featured">
-        <div class="project-number">01</div>
-        <div class="project-body">
-          <div class="project-topline">
-            <p>LOCAL-FIRST AI · OPEN SOURCE</p>
-            <a href="https://github.com/UladzKha/samuraizer-cli" target="_blank" rel="noreferrer" aria-label="View Samuraizer on GitHub">GitHub ↗</a>
-          </div>
-          <h3>Samuraizer</h3>
-          <p class="project-lead">Private meeting intelligence, entirely on your machine.</p>
-          <p>Turns recordings into transcripts, summaries, action items, and decisions without sending data to the cloud. The reference implementation of the memnex v0.2 open specification, with portable output and a complete provenance chain.</p>
-          <div class="project-details">
-            <div><span>PROBLEM</span><p>Useful meeting memory without cloud exposure or vendor lock-in.</p></div>
-            <div><span>SYSTEM</span><p>Resumable CLI pipeline, parallel LLM stages, and an MCP interface for agents.</p></div>
-            <div><span>RESULT</span><p>Published as two npm packages; ~2.3× faster analysis through parallel execution.</p></div>
-          </div>
-          <ul class="tags" aria-label="Technologies"><li>TypeScript</li><li>Whisper</li><li>Ollama</li><li>MCP</li><li>Node.js</li></ul>
-        </div>
-      </article>
+        <article class="entry" id="entry-002" aria-labelledby="entry-002-title"><div class="entry-top"><div><p class="entry-id">ENTRY 002 / AGENT MEMORY</p><p class="filed">FILED 26 OCT 2026</p></div><span class="status">DATA DEPOSITED</span></div><div class="entry-title-row"><h3 id="entry-002-title">memgate</h3><span class="entry-type">THE GATE</span></div><div class="entry-content"><div class="field"><span>HYPOTHESIS</span><p>Untrusted text should not write to an agent's long-term memory without a check.</p></div><div class="field"><span>METHOD</span><p>Use a deterministic local gate with provenance tagging and an action-time guard. No LLM runs inside the gate.</p></div><div class="field"><span>RESULT</span><p>A public pilot used three local ~24–31B models: Qwen, Gemma, and Mistral. The dataset is deposited on Zenodo.</p></div><div class="field"><span>STATUS</span><p>Public code and pilot data.</p></div></div><div class="entry-bottom"><div class="entry-links"><a href="https://github.com/UladzKha/memgate">REPOSITORY ↗</a><a href="https://github.com/UladzKha/memory-gate-pilot">PILOT ↗</a><a class="doi" href="https://doi.org/10.5281/zenodo.23665517" aria-label="Zenodo DOI 10.5281/zenodo.23665517"><b>DOI</b> 10.5281/zenodo.23665517 ↗</a></div></div></article>
 
-      <article class="project">
-        <div class="project-number">02</div>
-        <div class="project-body">
-          <div class="project-topline">
-            <p>AGENTIC PIPELINE · OBSERVABILITY</p>
-            <a href="https://github.com/UladzKha/pixelize" target="_blank" rel="noreferrer" aria-label="View Pixelize on GitHub">GitHub ↗</a>
-          </div>
-          <h3>Pixelize</h3>
-          <p class="project-lead">A photo-to-pixel-art agent that exposes every decision.</p>
-          <p>A vision model selects the rendering strategy, a deterministic tool creates the image, and an independent quality gate grades and retries the result. Inputs, outputs, timings, and reasoning stream to a live dashboard.</p>
-          <div class="project-details">
-            <div><span>DESIGN</span><p>Two independent LLM decisions separated from deterministic rendering and evaluation.</p></div>
-            <div><span>QUALITY</span><p>Reproducible image metrics trigger retries instead of relying on model confidence.</p></div>
-            <div><span>TRACE</span><p>Every pipeline event is recorded and visible down to the individual job.</p></div>
-          </div>
-          <ul class="tags" aria-label="Technologies"><li>NestJS</li><li>React</li><li>Ollama</li><li>BullMQ</li><li>sharp</li></ul>
-        </div>
-      </article>
-    </section>
+        <article class="entry" id="entry-003" aria-labelledby="entry-003-title"><div class="entry-top"><div><p class="entry-id">ENTRY 003 / CONTINUITY</p><p class="filed">FILED 26 OCT 2026</p></div><span class="status running"><span class="running-dot" aria-hidden="true"></span> RUNNING · PRIVATE</span></div><div class="entry-title-row"><h3 id="entry-003-title">Genkan</h3><span class="entry-type">THE ENTRANCE</span></div><div class="entry-content"><div class="field"><span>HYPOTHESIS</span><p>A personal agent should keep its identity, memory, and goals while earning rights through verified results.</p></div><div class="field"><span>METHOD</span><p>Build a continuity runtime for one persistent agent as cognition moves between devices.</p></div><div class="field"><span>RESULT</span><p>In progress. No result is claimed yet.</p></div><div class="field"><span>STATUS</span><p>Private project. “Sealed in stone, earn capability.”</p></div></div><div class="entry-bottom"><div class="entry-links"><span>DESCRIPTION ONLY / NO PUBLIC REPOSITORY</span></div></div></article>
+      </section>
 
-    <section class="section approach" id="approach" aria-labelledby="approach-title">
-      <div class="section-heading">
-        <p class="section-index">02 / APPROACH</p>
-        <h2 id="approach-title">Evidence over<br>impressions.</h2>
-      </div>
-      <div class="principles">
-        <article><span>01</span><h3>Freeze the measure</h3><p>Define the dataset, scoring, and thresholds before the run. If the target moves after the result, the evaluation is decoration.</p></article>
-        <article><span>02</span><h3>Prefer deterministic signals</h3><p>Use reproducible metrics where they are meaningful. An LLM judge is a tool—not a default answer.</p></article>
-        <article><span>03</span><h3>Make systems observable</h3><p>Store inputs, outputs, decisions, timings, and provenance. Improvement starts with seeing what actually happened.</p></article>
-        <article><span>04</span><h3>Keep data local</h3><p>Self-hosting is both an engineering choice and a privacy stance. The system should earn the right to move data elsewhere.</p></article>
-      </div>
-    </section>
+      <section class="paper-section background" id="background" aria-labelledby="background-title"><div class="section-number">02 / BACKGROUND</div><div><h2 id="background-title">Engineer first.<br>Questions next.</h2><div class="background-grid"><p>I’m an AI/QA engineer at EssilorLuxottica in the Netherlands, leading an AI-based testing initiative. I started as a frontend lead and now work toward a Lead/Staff AI Engineer role.</p><p>BSc IT Engineering, BSUIR. My current focus is evaluations and agent memory you can trust.</p></div><p class="margin-note">from interfaces to evidence</p></div></section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="section-index">03 / ABOUT</p>
-        <h2 id="about-title">Engineer first.<br>AI, measured.</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-copy">
-          <p>I’m Ulad, an AI engineer based in the Netherlands. My background spans frontend engineering, technical leadership, and production AI systems.</p>
-          <p>Today I work on retrieval, structured extraction, agentic workflows, and the evaluation machinery that makes model changes measurable. Outside work, I run a dual-GPU home lab for local inference, vision, and speech workloads.</p>
-        </div>
-        <div class="focus-list">
-          <p>FOCUS AREAS</p>
-          <ul>
-            <li>LLM evaluation & golden sets</li>
-            <li>Agent testing & quality gates</li>
-            <li>Local inference infrastructure</li>
-            <li>Mechanistic interpretability</li>
-            <li>Privacy-focused software</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <section class="paper-section writing" id="writing" aria-labelledby="writing-title"><div class="section-number">03 / WRITING & TALKS</div><div><h2 id="writing-title">On the next page<span class="period">.</span></h2><p>A Genkan talk at Sensemakers Amsterdam is planned. Date and public link will be added when confirmed.</p><!-- TODO: Add confirmed talk date, title and public link. --></div></section>
 
-    <section class="contact" aria-labelledby="contact-title">
-      <p class="section-index">04 / CONTACT</p>
-      <h2 id="contact-title">Building something<br>that needs to <em>actually work?</em></h2>
-      <a class="button primary large" href="mailto:raer.camp@gmail.com">raer.camp@gmail.com <span>↗</span></a>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Uladzimir Khadakouski</p>
-    <p>Built with plain HTML, CSS &amp; intent.</p>
-    <a href="#top">Back to top ↑</a>
-  </footer>
-  <script src="script.js"></script>
+      <section class="paper-section contact" id="contact" aria-labelledby="contact-title"><div class="section-number">04 / CONTACT</div><div><h2 id="contact-title">Continue the conversation<span class="period">.</span></h2><p>Find the public code, follow new entries, or get in touch.</p><div class="contact-links"><a href="https://github.com/UladzKha">GitHub ↗</a><a href="https://x.com/u_kouski">X ↗</a><a href="https://www.linkedin.com/in/k-dalu/">LinkedIn ↗</a><a href="mailto:raer.camp@gmail.com">Email ↗</a></div></div></section>
+    </main>
+    <footer class="site-footer"><span>ULADZIMIR KHADAKOUSKI / <span id="year">2026</span></span><span>LAB NOTEBOOK · PAGE 01 / OPEN</span><div class="footer-links"><a href="https://github.com/UladzKha">GitHub</a><a href="https://x.com/u_kouski">X</a><a href="https://www.linkedin.com/in/k-dalu/">LinkedIn</a><a href="mailto:raer.camp@gmail.com">Email</a><a href="#top">Top ↑</a></div></footer>
+  </div>
 </body>
 </html>
