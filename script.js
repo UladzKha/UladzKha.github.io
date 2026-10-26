@@ -1,5 +1,6 @@
 const themeButton = document.getElementById('theme-toggle');
-const savedTheme = localStorage.getItem('ulad-notebook-theme');
+let savedTheme;
+try { savedTheme = localStorage.getItem('ulad-notebook-theme'); } catch { savedTheme = null; }
 if (savedTheme === 'night') document.documentElement.dataset.theme = 'night';
 function syncThemeButton() {
   const night = document.documentElement.dataset.theme === 'night';
@@ -11,7 +12,7 @@ syncThemeButton();
 themeButton.addEventListener('click', () => {
   const night = document.documentElement.dataset.theme !== 'night';
   document.documentElement.dataset.theme = night ? 'night' : 'paper';
-  localStorage.setItem('ulad-notebook-theme', night ? 'night' : 'paper');
+  try { localStorage.setItem('ulad-notebook-theme', night ? 'night' : 'paper'); } catch { /* The toggle still works for this visit. */ }
   syncThemeButton();
 });
 document.getElementById('year').textContent = new Date().getFullYear();
